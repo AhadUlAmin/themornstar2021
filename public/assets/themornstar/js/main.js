@@ -20,8 +20,6 @@ $(document).ready(function () {
         cache: false,
         success: function (data) {
           var data = $('<div>').append(data).find('#homepage');
-          
-          console.log(data);
           $("#page_content").html(data);
           $("#homepage").css("display", "none");
           $("#page_content").css("display", "block");
@@ -35,6 +33,7 @@ $(document).ready(function () {
         data: dataString,
         cache: false,
         success: function (data) {
+          var data = $('<div>').append(data).find('#homepage');
           $("#page_content").html(data);
           $("#homepage").css("display", "none");
           $("#page_content").css("display", "block");
@@ -48,6 +47,7 @@ $(document).ready(function () {
         data: dataString,
         cache: false,
         success: function (data) {
+          var data = $('<div>').append(data).find('#homepage');
           $("#page_content").html(data);
           $("#homepage").css("display", "none");
           $("#page_content").css("display", "block");
@@ -63,6 +63,7 @@ $(document).ready(function () {
           data: dataString,
           cache: false,
           success: function (data) {
+            var data = $('<div>').append(data).find('#homepage');
             $('#page_content').html(data);
             $('#homepage').css("display", "none");
             $('#page_content').css("display", "block");

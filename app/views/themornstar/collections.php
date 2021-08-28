@@ -1,3 +1,4 @@
+<?php $this->view("components/header", $data); ?>
 <main id="homepage">
     <section>
          COLLECTION =>
@@ -6,7 +7,9 @@
               } ?>
               
     </section>
-    </main>
+</main>
     <section id="page_content">
     
     </section>
+
+<?php $this->view("components/footer"); ?>

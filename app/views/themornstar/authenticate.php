@@ -1,3 +1,4 @@
+<?php $this->view("components/header",$data); ?>
 <?php
 include 'login/src/autoload.php';
 include 'login/config.php';
@@ -144,4 +145,4 @@ if (isset($name) && !empty($adapter->getUserProfile()->identifier))
 </main>
 <section id="page_content">
 </section>
-
+<?php $this->view("components/footer"); ?>

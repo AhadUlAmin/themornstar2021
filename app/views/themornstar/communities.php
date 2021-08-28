@@ -1,4 +1,6 @@
 
+    <?php $this->view("components/header", $data); ?>
+    
     <main id="homepage">
     <section class="container">
          COMMUNITIES => 
@@ -10,3 +12,4 @@
     <section id="page_content">
     
     </section>
+    <?php $this->view("components/footer", $data); ?>

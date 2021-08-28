@@ -4,7 +4,6 @@ class Database{
   // Hold the class instance.
   private static $instance = null;
   private $conn;
-  // The db connection is established in the private constructor.
   private function __construct()
   {
     try
@@ -37,7 +36,7 @@ class Database{
     return $this->conn;
   }
 
-  public function read($query,$data = []){ 
+  public function read($query,$data = []){
     $stmt = $this->conn->prepare($query);
     $result = $stmt->execute($data);
     $data = $stmt->fetchAll(PDO::FETCH_OBJ);
