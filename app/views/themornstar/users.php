@@ -1,4 +1,6 @@
-<?php $this->view("components/header"); ?>
+<?php 
+
+$this->view("components/header", $data); ?>
 <main id="homepage">
         User => 
         <?php if(isset($data['pageQuery'])){

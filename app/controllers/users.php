@@ -6,13 +6,12 @@ class Users extends Controller
     {
         if(isset($_GET['user'])){
             $data['pageQuery'] =  $_GET['user'];
-            $this->view("users",$data);
         }else{
-            $data['pageQuery'] =  ltrim($param1, '@');;
-            //$this->view("components/header");
-            $this->view("users",$data);
-            //$this->view("components/footer");
+            $data['pageQuery'] =  ltrim($param1, '@');
         }
+        $data['page_title'] = $data['pageQuery'];
+        $this->view("users",$data);
+            
     }
 
     public function create(){
