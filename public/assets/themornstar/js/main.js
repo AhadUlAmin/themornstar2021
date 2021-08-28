@@ -1,7 +1,8 @@
 $(document).ready(function () {
 
   var navo,fetchAndInserto;
-  var root = "http://themornstar.com/";
+ // var root = "http://themornstar.com/";
+  let root = document.location.hostname;
   fetchAndInserto = function (href) {
     var str = href;
     var str1 = str.slice(root.length);
@@ -18,6 +19,9 @@ $(document).ready(function () {
         data: dataString,
         cache: false,
         success: function (data) {
+          var data = $('<div>').append(data).find('#homepage');
+          
+          console.log(data);
           $("#page_content").html(data);
           $("#homepage").css("display", "none");
           $("#page_content").css("display", "block");

@@ -1,3 +1,4 @@
+<?php $this->view("components/header"); ?>
 <main id="homepage">
         User => 
         <?php if(isset($data['pageQuery'])){
@@ -7,5 +8,6 @@
 </main>
 <section id="page_content">
 </section>
+<?php $this->view("components/footer"); ?>
 
 

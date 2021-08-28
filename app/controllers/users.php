@@ -9,9 +9,9 @@ class Users extends Controller
             $this->view("users",$data);
         }else{
             $data['pageQuery'] =  ltrim($param1, '@');;
-            $this->view("components/header");
+            //$this->view("components/header");
             $this->view("users",$data);
-            $this->view("components/footer");
+            //$this->view("components/footer");
         }
     }
 
