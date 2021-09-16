@@ -10,8 +10,17 @@ class Home extends Controller
          $data['userData'] = $userData;
      }
 
-     $data['page_title'] = "Home";
-     $this->view("index",$data);
+ 
+
+     if(isset($_SESSION['userUniqueId'])){
+         echo "SESSION-" . $_SESSION['userUniqueId'];
+
+     }else{
+        $data['page_title'] = "Home";
+        $this->view("index",$data);
+     }
+
+
     }
 
 }

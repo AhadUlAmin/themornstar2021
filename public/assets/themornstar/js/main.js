@@ -1,10 +1,13 @@
 $(document).ready(function () {
 
   var navo,fetchAndInserto;
- // var root = "http://themornstar.com/";
-  let root = document.location.hostname;
+  var root = "http://themornstar.test/";
+  //var root = window.location.protocol +"//" + window.location.host + window.location.pathname + window.location.search;
+  
   fetchAndInserto = function (href) {
+
     var str = href;
+
     var str1 = str.slice(root.length);
     var str1 = str1.slice(0,-1);
 
@@ -19,7 +22,8 @@ $(document).ready(function () {
         data: dataString,
         cache: false,
         success: function (data) {
-          var data = $('<div>').append(data).find('#homepage');
+              alert(str);
+          var data = $('<div>').append(data).find('#dynamic_content');
           $("#page_content").html(data);
           $("#homepage").css("display", "none");
           $("#page_content").css("display", "block");
@@ -33,7 +37,7 @@ $(document).ready(function () {
         data: dataString,
         cache: false,
         success: function (data) {
-          var data = $('<div>').append(data).find('#homepage');
+          var data = $('<div>').append(data).find('#dynamic_content');
           $("#page_content").html(data);
           $("#homepage").css("display", "none");
           $("#page_content").css("display", "block");
@@ -47,7 +51,7 @@ $(document).ready(function () {
         data: dataString,
         cache: false,
         success: function (data) {
-          var data = $('<div>').append(data).find('#homepage');
+          var data = $('<div>').append(data).find('#dynamic_content');
           $("#page_content").html(data);
           $("#homepage").css("display", "none");
           $("#page_content").css("display", "block");
@@ -63,7 +67,7 @@ $(document).ready(function () {
           data: dataString,
           cache: false,
           success: function (data) {
-            var data = $('<div>').append(data).find('#homepage');
+            var data = $('<div>').append(data).find('#dynamic_content');
             $('#page_content').html(data);
             $('#homepage').css("display", "none");
             $('#page_content').css("display", "block");
@@ -71,9 +75,9 @@ $(document).ready(function () {
           },
         });
       }
-      else if (str1.split("/").pop() === "") {
-        $("#page_content").css("display", "none");
+      else if (!(str1.split("/").pop()) || str1.split("/").pop().trim().length === 0) {
         $("#homepage").css("display", "block");
+        $("#page_content").css("display", "none");
       }
 
 

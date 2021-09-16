@@ -1,7 +1,7 @@
-<?php include 'components/header.php' ?>
+<?php $this->view("components/header", $data); ?>
 <main id="homepage">
-    <section class="container">
-      Homepage
+    <section class="container" id="dynamic_content">
+      Homepage 
   
       <div id="display_posts" class="user-post-display-body-main-container" style="margin:0px auto;">
       <nav id="secondary">
@@ -19,5 +19,4 @@
     
     </section>
 
-
-<?php include 'components/footer.php' ?>
+    <?php $this->view("components/footer"); ?>

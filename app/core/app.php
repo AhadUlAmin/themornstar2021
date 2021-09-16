@@ -3,7 +3,7 @@
 class App
 {
     protected $controller = "home";
-    protected $method = "index";
+    protected $method = "index"; 
     protected $params =[];
     public function __construct()
     {
@@ -85,10 +85,12 @@ class App
                         $this->controller = $paramData['paramName'];
                         require "../app/controllers/".$this->controller. ".php";
                         $this->controller = new $this->controller();
+                    }else{
+
+                        die("publishers or page or content not exits");
                     }
 
 
-                    die("publishers or page or content not exits");
                 }
             }
             else

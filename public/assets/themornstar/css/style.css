@@ -1,31 +1,7 @@
-@font-face {
-    font-family: 'ProximaNova-Light';
-    src: url('http://themornstar.com/assets/themornstar/fonts/ProximaNova-Light/ProximaNova-Light.eot?') format('eot'), 
-    url('http://themornstar.com/assets/themornstar/fonts/ProximaNova-Light/ProximaNova-Light.svg#ProximaNova-Light') format('svg');
-}
-
-@font-face {
-    font-family: 'ProximaNova-Regular';
-    src: url('http://themornstar.com/assets/themornstar/fonts/ProximaNova-Regular/ProximaNova-Regular.eot?') format('eot'), 
-    url('http://themornstar.com/assets/themornstar/fonts/ProximaNova-Regular/ProximaNova-Regular.otf') format('opentype'),
-     url('http://themornstar.com/assets/themornstar/fonts/ProximaNova-Regular/ProximaNova-Regular.woff') format('woff'), 
-     url('http://themornstar.com/assets/themornstar/fonts/ProximaNova-Regular/ProximaNova-Regular.ttf') format('truetype'),
-      url('http://themornstar.com/assets/themornstar/fonts//ProximaNova-Regular/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
-}
-
-@font-face {
-    font-family: 'ProximaNova-Thin';
-    src: url('http://themornstar.com/assets/themornstar/fonts/ProximaNova-Thin/ProximaNova-Thin.eot?') format('eot'), 
-    url('http://themornstar.com/assets/themornstar/fonts/ProximaNova-Thin/ProximaNova-Thin.otf') format('opentype'), 
-    url('http://themornstar.com/assets/themornstar/fonts/ProximaNova-Thin/ProximaNova-Thin.woff') format('woff'), 
-    url('http://themornstar.com/assets/themornstar/fonts/ProximaNova-Thin/ProximaNova-Thin.ttf') format('truetype'), 
-    url('http://themornstar.com/assets/themornstar/fonts/ProximaNova-Thin/ProximaNova-Thin.svg#ProximaNova-Thin') format('svg');
-}
-
 body{
     background: black;
     color:white;
-    font-family: 'ProximaNova-Thin', sans-serif;
+    font-family: sans-serif;
 
 }
 .container{

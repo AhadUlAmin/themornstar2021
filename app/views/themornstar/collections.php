@@ -1,6 +1,6 @@
 <?php $this->view("components/header", $data); ?>
 <main id="homepage">
-    <section>
+    <section id="dynamic_content">
          COLLECTION =>
          <?php if(isset($data['pageQuery'])){
              echo  $data['pageQuery'];

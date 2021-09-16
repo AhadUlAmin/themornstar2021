@@ -3,6 +3,13 @@
 class Authenticate extends Controller{
     public function index($param1 = "")
     { 
+
+        if($_SERVER['REQUEST_METHOD'] == "POST"){
+        
+            $user = $this->model("User");
+            $user->authenticate($_POST);
+         }
+
         if(isset($_GET['publisher'])){
             $data['pageQuery'] =  $_GET['publisher'];
            }else{

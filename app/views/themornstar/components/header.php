@@ -18,7 +18,7 @@
 
 
          // Load data on first load...
-         $.post('<?=ROOT?>/loadcontroller', {
+         $.post('<?php echo ROOT;?>/loadcontroller', {
             'group_no': track_load
          }, function(data) {
             track_load++;
@@ -108,7 +108,7 @@
          <a title="Authenticate" href="<?=ROOT?>authenticate/">Authenticate</a>
       </li>
          <li><a href="<?=ROOT?>@aminul/" title="aminul">@{User }</a></li>
-            <li><a href="<?=ROOT?>+MathVoice/"  title="MathVoice">+{/Community}</a></li>
+            <li><a href="<?=ROOT?>+MathVoice/XPuUP6d7bx9/XPuUP6d7bx9/"  title="MathVoice">+{/Community}</a></li>
             <li><a href="<?=ROOT?>~php8/"  title="php8">~{/Series }</a></li>
             <li><a href="<?=ROOT?>titas/" title="Titas">{Publisher}</a></li>
       </ul>

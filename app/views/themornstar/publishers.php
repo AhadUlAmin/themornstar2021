@@ -1,11 +1,14 @@
 
 <?php $this->view("components/header", $data); ?>
 <main id="homepage">
-PUBLISHER => 
+        <section id="dynamic_content">
+        PUBLISHER => 
         <?php 
         if(isset($data['pageQuery'])){
              echo  $data['pageQuery'];
         } ?>
+        </section>
+
               
 </main>
 <section id="page_content">

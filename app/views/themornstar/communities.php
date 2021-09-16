@@ -2,7 +2,7 @@
     <?php $this->view("components/header", $data); ?>
     
     <main id="homepage">
-    <section class="container">
+    <section class="container" id="dynamic_content">
          COMMUNITIES => 
          <?php if(isset($data['pageQuery'])){
              echo  $data['pageQuery'];
