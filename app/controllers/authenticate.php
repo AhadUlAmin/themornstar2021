@@ -5,9 +5,9 @@ class Authenticate extends Controller{
     { 
 
         if($_SERVER['REQUEST_METHOD'] == "POST"){
-        
+            
             $user = $this->model("User");
-            $user->authenticate($_POST);
+            $user->authenticate($_POST['userEmail'] ,$_POST['userPassword']);
          }
 
         if(isset($_GET['publisher'])){

@@ -2,7 +2,13 @@
 <main id="homepage">
     <section class="container" id="dynamic_content">
       Homepage 
- 
+      <?php 
+     if(isset($_SESSION['err'])){ 
+         echo "Eroor " . $_SESSION['err'];
+        }
+     ?>
+      
+
      <?php 
      if(isset($_SESSION['userUniqueId'])){ 
          echo "Welcome " . $_SESSION['userUniqueId'];
